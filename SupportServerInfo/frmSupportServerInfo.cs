@@ -187,7 +187,7 @@ namespace SupportServerInfo
                 ws.Cells["A11"].Value = "Disk Usage :";
 
 
-                ws.Cells["B2"].Value = DateTime.Now.ToString("MMM dd, yyyy", new System.Globalization.CultureInfo("en-US"));
+                ws.Cells["B2"].Value = DateTime.Now.ToString("MMM dd, yyyy HH:mm:ss", new System.Globalization.CultureInfo("en-US"));
                 ws.Cells["B3"].Value = com.OSFullName + " (Version " + com.OSVersion + ")";
                 ws.Cells["B4"].Value = com.ComputerName;
                 ws.Cells["B5"].Value = com.IPAddress;
